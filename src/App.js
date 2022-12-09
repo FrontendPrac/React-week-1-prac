@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Click from "./components/Click";
+import GrandFather from "./components/Props";
+import State from "./components/State";
+import Input from "./components/Input";
+import Counter from "./components/Counter";
+import MapArray from "./components/MapArray";
+import MapObj from "./components/MapObj";
+import Btn from "./components/Btn";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <GrandFather />
+            <State />
+            <Click />
+            <Input />
+            <Counter />
+            <MapArray />
+            <MapObj />
+            <Btn />
+        </div>
+    );
+};
 
 export default App;
